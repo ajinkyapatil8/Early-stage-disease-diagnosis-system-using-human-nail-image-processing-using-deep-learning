@@ -1,0 +1,18 @@
+Disease_Name,Symptoms,Cause,Severity,Treatment
+alopecia areata,"Patchy hair/nail loss, nail pitting",Autoimmune disease,Moderate,"Corticosteroid therapy, topical treatments"
+beau_s lines,Deep grooves across nails,"Severe illness, trauma, zinc deficiency",Moderate,"Treat underlying cause, nutritional support"
+bluish nail,Blue discoloration of nail,"Lack of oxygen, heart/lung disease",Severe,"Treat underlying condition, oxygen therapy"
+clubbing,"Rounded, bulbous fingertips, nail curvature","Heart disease, lung disease",Severe,Treat underlying cause
+Darier_s disease,"Wart-like blemishes, thickened nails",Genetic mutation,Moderate,"Retinoids, topical therapy"
+eczema nail,"Nail ridges, discoloration, inflammation",Atopic dermatitis,Mild,"Topical steroids, moisturizers"
+half and half nailes (Lindsay_s nails),"Nail proximal white, distal brown",Kidney disease,Moderate,Treat underlying kidney disease
+koilonychia,Spoon-shaped nails,Iron deficiency anemia,Mild,"Iron supplements, treat anemia"
+leukonychia,White spots/lines on nails,"Trauma, zinc deficiency",Mild,"Usually self-resolving, treat deficiency"
+Muehrck-e_s lines,Paired white lines across nails,Hypoalbuminemia,Moderate,Correct albumin deficiency
+onycholysis,Nail separation from nail bed,"Trauma, fungal infection, thyroid disease",Moderate,"Treat underlying cause, antifungal if needed"
+pale nail,Pale or white nails,"Anemia, liver disease",Moderate,Treat underlying condition
+red lunula,Red half-moon at nail base,"Cardiovascular disease, psoriasis",Mild,Treat underlying condition
+splinter hemorrhage,Small blood spots under nails,"Trauma, endocarditis",Moderate,Treat underlying cause
+terry_s nail,White nail with distal band,"Liver disease, aging",Mild,Treat underlying condition
+white nail,Completely white nails,"Liver disease, malnutrition",Moderate,"Treat underlying condition, nutrition"
+Yellow Nails,"Yellow discoloration, thickened, slow growth","Fungal infection, respiratory disease",Moderate,"Antifungal treatment, manage respiratory disease"

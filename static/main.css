@@ -1,0 +1,537 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section (Main Page) */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* Ithe background image kadhun takli ahe, ti apan HTML madhun load karu */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    /* Wave curve sathi */
+    clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase; /* Branding sathi akshare mothi */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    opacity: 0.8; /* Hover effect */
+}
+
+/* Landing Page Content */
+.container {
+    padding-left: 80px;
+    margin-top: 80px;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #f0f0f0;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6; /* Wachayla sope jail */
+}
+
+.btn-start {
+    display: inline-block;
+    padding: 12px 35px;
+    background: white;
+    color: #2e8b7c;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-start:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px); /* Thoda varti yeil */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer Styling */
+.footer {
+    position: relative;
+    margin-top: -50px; /* Curve chya thoda varti yenyasathi adjust kara */
+    background: transparent;
+    color: #333;
+}
+/*About Page */
+
+/* About Page Specific Styles */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar - Fixed for white background pages */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    width: 100%;
+    background: #2e8b7c; /* Solid color for visibility */
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Hero Section (Only for index.html) */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+/* Home Navbar transparent thevnyasathi index.html madhe inline style vapra */
+
+/* About Page Styles */
+.about-section {
+    padding: 80px 50px;
+    text-align: center;
+    background: #f9f9f9;
+    min-height: 100vh;
+}
+
+.about-header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.models-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.model-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #66c2a5;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 35px;
+    background: #2e8b7c;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* nails pages  */
+/* --- About Section Modern Look --- */
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 12%; /* Space thodi vadhavli ahe */
+    background: #ffffff;
+    gap: 60px;
+}
+
+/* Image Wrapper with decorative element */
+.about-img {
+    position: relative;
+    flex: 1;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30px; /* Modern rounded corners */
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff; /* Soft Neumorphic shadow */
+    transition: transform 0.4s ease;
+}
+
+.about-img img:hover {
+    transform: translateY(-10px); /* Hover kelyavar thodi varti yeil */
+}
+
+/* Text Styling */
+.about-text {
+    flex: 1.2;
+}
+
+.about-text h2 {
+    font-size: 42px; /* Mothi heading */
+    color: #2e8b7c;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Heading khali ek teal line */
+.about-text h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #2e8b7c;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8; /* Wachayla easy jail */
+    margin-bottom: 30px;
+}
+
+/* Ek chota 'Check Models' button design sathi */
+.btn-secondary {
+    padding: 12px 30px;
+    border: 2px solid #2e8b7c;
+    color: #2e8b7c;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #2e8b7c;
+    color: white;
+}
+
+/* Result Section Styling */
+.result-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.prediction-text {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.preview-img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-back-link {
+    color: #2e8b7c;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #2e8b7c;
+}
+
+/* --- Global Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* --- Navbar (Screenshot Sarkha Teal) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background: #2e8b7c; /* Solid Teal Color */
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* --- Container Layout --- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Upload Card Styling --- */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.card h1 {
+    color: #2e8b7c;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.file-input {
+    border: 2px dashed #2e8b7c;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn {
+    background: #2e8b7c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #246d61;
+    transform: translateY(-2px);
+}
+
+/* --- Prediction Result Section --- */
+.result-section {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.prediction-text {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.result-details {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    min-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.info-list {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.info-list p {
+    margin-bottom: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.preview-img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Professional Footer --- */
+.main-footer {
+    background: #2e8b7c;
+    color: white;
+    padding: 60px 80px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer-column p, .footer-column li {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer-btn {
+    width: 100%;
+    padding: 12px;
+    background: #66c2a5; /* Light Teal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 13px;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+    .navbar { padding: 15px 20px; flex-direction: column; gap: 10px; }
+    .footer-container { flex-direction: column; text-align: center; }
+    .footer-column { width: 100%; }
+}

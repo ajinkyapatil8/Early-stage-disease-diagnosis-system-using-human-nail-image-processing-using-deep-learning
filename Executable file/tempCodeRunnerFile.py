@@ -1,0 +1,1 @@
+checkpoint_path = "../Models/Vgg-16-nail-disease.h5"

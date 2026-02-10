@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - Nail Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <div class="navbar" style="background: #2e8b7c;">
+        <div class="logo">NAIL DISEASE DETECTION</div>
+        <div class="nav-links">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/nail">NAIL</a>
+        </div>
+    </div>
+
+    <div class="about-us-container">
+        
+        <div class="about-img">
+            <img src="{{ url_for('static', filename='about_doctor.jpg') }}" alt="Medical AI">
+        </div>
+
+        <div class="about-text">
+            <h2>About Our Mission</h2>
+            <p>
+                Health systems are under greater pressure than ever. Our AI-driven approach provides 
+                much-needed relief to overworked doctors by streamlining the triage process. 
+                It seamlessly integrates into the medical workflow, using advanced Deep Learning 
+                to deliver enhanced insights.
+            </p>
+            <p>
+                By calculating the likelihood of particular nail conditions, our system facilitates 
+                a faster, automated route to outcomes, ensuring patients get the care they need 
+                more efficiently.
+            </p>
+            
+            <a href="/nail" class="btn-secondary">Try Detection Now</a>
+        </div>
+    </div>
+
+    <div class="footer" style="padding: 30px; text-align: center; background: #f4f4f4; color: #777;">
+        <p>© 2026 Nail Disease Detection | Advanced AI Medical Solutions</p>
+    </div>
+
+</body>
+</html>

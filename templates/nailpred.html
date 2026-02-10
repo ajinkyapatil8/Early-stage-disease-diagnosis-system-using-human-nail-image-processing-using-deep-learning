@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nail Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="navbar bg-teal">
+        <div class="logo">NAIL DISEASE DETECTION</div>
+        <div class="nav-links">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/nail">NAIL</a>
+            <i class="fa fa-search" style="color: white; margin-left: 15px;"></i>
+        </div>
+    </div>
+
+    <div class="container" style="min-height: 60vh; padding: 50px 0;">
+
+        <!-- ===== Upload Form ===== -->
+        <div class="card">
+            <h1>Welcome to Nail Disease Detection</h1>
+            <p>Upload an image of a nail to detect the disease using AI.</p>
+
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" class="file-input" required>
+                <br><br>
+                <button type="submit" class="btn">Predict Disease</button>
+            </form>
+        </div>
+
+        <!-- ===== Result Section ===== -->
+        {% if prediction %}
+        <div class="result-section">
+            <h1 class="prediction-text">The Person is diagnosed with {{ prediction }}</h1>
+            
+            <div class="result-details">
+                <p><b>Confidence Level:</b> {{ confidence }}%</p>
+
+                <div class="info-list">
+                    {% for key, value in info.items() %}
+                        <p><b>{{ key }}:</b> {{ value }}</p>
+                    {% endfor %}
+                </div>
+
+                {% if image_path %}
+                <img src="{{ image_path }}" class="preview-img">
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Reach at..</h3>
+                <p><i class="fa fa-map-marker"></i> Location</p>
+                <p><i class="fa fa-phone"></i> Call +91 1234567890</p>
+                <p><i class="fa fa-envelope"></i> demo@gmail.com</p>
+                <div class="social-icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>About</h3>
+                <p>Health systems are under greater pressure than ever. AI provides relief to overworked doctors and streamlines the triage process.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/nail">Nail</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Enter email" class="footer-input">
+                <button class="footer-btn">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2026 Nail Disease Detection | AI Project
+        </div>
+    </footer>
+
+</body>
+</html>

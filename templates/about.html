@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - Nail Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">NAIL DISEASE DETECTION</div>
+        <div class="nav-links">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/nail">NAIL</a>
+        </div>
+    </div>
+
+    <section class="about-section">
+        <div class="about-header">
+            <h2>Models Employed For The Project</h2>
+            <p>Transfer Learning Models</p>
+        </div>
+
+        <div class="models-grid">
+            <div class="model-card">
+                <div class="circle"></div>
+                <h3>VGG16</h3>
+                <p>VGG-16 is a convolutional neural network that is 16 layers deep. The pretrained network can classify images into 1000 object categories.</p>
+            </div>
+
+            <div class="model-card">
+                <div class="circle"></div>
+                <h3>RESNET50</h3>
+                <p>ResNet-50 is a convolutional neural network that is 50 layers deep. The pretrained network can classify images into 1000 object categories.</p>
+            </div>
+
+            <div class="model-card">
+                <div class="circle"></div>
+                <h3>INCEPTIONV3</h3>
+                <p>InceptionV3 is a convolutional neural network that is 48 layers deep. The pretrained network can classify images into 1000 object categories.</p>
+            </div>
+
+            <div class="model-card">
+                <div class="circle"></div>
+                <h3>XCEPTION</h3>
+                <p>Xception is a convolutional neural network that is 71 layers deep. The pretrained network can classify images into 1000 object categories.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <a href="/" class="btn-back">Back to Home</a>
+        </div>
+    </section>
+
+    <div class="footer" style="padding: 20px; text-align: center; background: #222; color: white;">
+        <p>© 2026 Nail Disease Detection | AI Project</p>
+    </div>
+
+</body>
+</html>
